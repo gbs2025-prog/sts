@@ -55,6 +55,8 @@ Sande Tech Solutions provides a seamless and secure payment system integrating *
   6. the official site
   
   <li><a href="STS20251.html">Home Menu</a></li>
+  [Open STS20251.html](STS20251.html)
+
   
 ## License
 &copy; 2025 Sande Tech Solutions. All rights reserved.
