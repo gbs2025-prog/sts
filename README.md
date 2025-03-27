@@ -1,5 +1,7 @@
 # Sande Tech Solutions - Payment System
 
+    <li><a href="STS20251.html">Home Menu</a></li>
+
 ## Overview
 Sande Tech Solutions provides a seamless and secure payment system integrating **Visa card payments** and **Mobile Money services** (Airtel, MTN, and Zamcash). This system enables users to make payments efficiently, directly deducting from their **bank accounts** or **mobile wallets** upon entering their details.
 
