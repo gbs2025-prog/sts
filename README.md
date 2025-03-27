@@ -52,6 +52,9 @@ Sande Tech Solutions provides a seamless and secure payment system integrating *
 - **Automated Payroll Deductions** for businesses.
 - **Integration with more payment gateways** (e.g., PayPal, MasterCard).
 - **Mobile App Version** for easier access.
-
+  6. the official site
+  
+  <li><a href="STS20251.html">Home Menu</a></li>
+  
 ## License
 &copy; 2025 Sande Tech Solutions. All rights reserved.
