@@ -36,4 +36,4 @@ We specialize in designing and developing **customized** software and management
 
 ---
 below is the link to our official website
-<li><a href="STS20251.html">Home Menu</a></li>
+<li><a href="stshomepage.html">My official website</a></li>
