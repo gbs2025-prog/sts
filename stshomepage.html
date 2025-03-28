@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sande Tech Solutions</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            background: url('your-background.jpg') no-repeat center center fixed; 
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            background: #594848;
+            width: 100%;
+            overflow: auto;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        li {
+            float: left;
+        }
+        nav a {
+            width: 120px;
+            display: block;
+            text-align: center;
+            background: #594848;
+            font-size: 17px;
+            color: white;
+            padding: 20px 10px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: skyblue;
+            color: black;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9);
+            overflow: auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .gallery {
+            margin: 10px;
+            border: 1px solid #ccc;
+            float: left;
+            width: calc(20% - 20px); /* Set width to 1/5 of container, minus margins */
+            background: white;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .gallery:hover {
+            transform: scale(1.05);
+        }
+        .gallery img {
+            width: 100%; /* Make image width 100% of its parent container */
+            height: 250px; /* Set fixed height for all images */
+            object-fit: cover; /* Ensures image covers the area */
+        }
+        .desc {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: black;
+        }
+        footer {
+            padding: 10px;
+            font-size: 17px;
+            font-weight: bold;
+            text-align: center;
+            background: #594848;
+            color: white;
+            letter-spacing: 1px;
+            margin-top: 20px;
+        }
+        .payment-section {
+            margin: 40px 0;
+            text-align: center;
+        }
+        .payment-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .payment-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="bio.html">C.E.O and Founder</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul> 
+    </nav>
+
+    <div class="container">
+        <!-- System Galleries -->
+        <div class="gallery">
+            <a href="pharmacy.html">
+                <img src="pharmacy.jpg" alt="Pharmacy Management System">
+                <div class="desc">Pharmacy Management Systems</div>
+            </a>
+        </div>
+
+        <div class="gallery">
+            <a href="tutoring.html">
+                <img src="tutoring.jpg" alt="Tutoring Management System">
+                <div class="desc">Tutoring Management Systems</div>
+            </a>
+        </div>
+
+        <div class="gallery">
+            <a href="office.html">
+                <img src="office.jpg" alt="Office Management System">
+                <div class="desc">Office Management Systems</div>
+            </a>
+        </div>
+
+        <div class="gallery">
+            <a href="barbing.html">
+                <img src="barbing.jpg" alt="Barbing Management System">
+                <div class="desc">Barbing Management Systems</div>
+            </a>
+        </div>
+
+        <div class="gallery">
+            <a href="development.html">
+                <img src="development.jpg" alt="Development Management System">
+                <div class="desc">Development Management Systems</div>
+            </a>
+        </div>
+
+        <div class="gallery">
+            <a href="Graphic Designing.html">
+                <img src="Graphic Designing.jpg" alt="Graphic Designing Management System">
+                <div class="desc">Graphic Designing Management Systems</div>
+            </a>
+        </div>
+
+        <div class="gallery">
+            <a href="church.html">
+                <img src="church.jpg" alt="Church Management System">
+                <div class="desc">Church Management Systems</div>
+            </a>
+        </div>
+
+        <div class="gallery">
+            <a href="banking.html">
+                <img src="banking.jpg" alt="Banking Management System">
+                <div class="desc">Banking Management Systems</div>
+            </a>
+        </div>
+
+        <div class="gallery">
+            <a href="agriculture.html">
+                <img src="agriculture.jpg" alt="Agriculture Management System">
+                <div class="desc">Agriculture Management Systems</div>
+            </a>
+        </div>
+
+        <div class="gallery">
+            <a href="hospital.html">
+                <img src="hospital.jpg" alt="Hospital Management System">
+                <div class="desc">Hospital Management Systems</div>
+            </a>
+        </div>
+
+        <div class="gallery">
+            <a href="school.html">
+                <img src="school.jpg" alt="School Management System">
+                <div class="desc">School Management Systems</div>
+            </a>
+        </div>
+
+        <div class="gallery">
+            <a href="payroll.html">
+                <img src="payroll.jpg" alt="Payroll Management System">
+                <div class="desc">Payroll Management Systems</div>
+            </a>
+        </div>
+
+        <div class="gallery">
+            <a href="public.html">
+                <img src="public.jpg" alt="Public Management System">
+                <div class="desc">Public Management Systems</div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Payment Section -->
+    <div class="payment-section">
+        <h2>Purchase any of these systems now</h2>
+        <button class="payment-button" onclick="window.location.href='onlinepayment.html'">Click here to issue payment / Visa</button>
+    </div>
+
+    <footer>
+        All Rights Reserved &copy; Sande Tech Solutions
+    </footer>
+</body>
+</html>
