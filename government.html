@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government of Zambia</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #000;
+            color: white;
+            margin: 0;
+        }
+        header {
+            background: linear-gradient(to right, #007A33, #E2231A, #000000, #FF8300);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        nav {
+            background: #007A33;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: background 0.3s, padding 0.3s;
+        }
+        nav a:hover {
+            background: #E2231A;
+            padding: 12px 18px;
+            border-radius: 5px;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            padding: 100px;
+            background: url('zambia-flag.jpg') no-repeat center center/cover;
+            color: white;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .hero p {
+            position: relative;
+            font-size: 32px;
+            font-weight: bold;
+            z-index: 1;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px;
+            background: #1a1a1a;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: -60px;
+        }
+        .ministries {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            padding: 40px 0;
+        }
+        .ministry {
+            background: #007A33;
+            color: white;
+            padding: 20px;
+            width: 280px;
+            text-align: center;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .ministry:hover {
+            background: #E2231A;
+            transform: scale(1.05);
+        }
+        .ministry img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .ministry h3 {
+            font-size: 20px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            background: #000;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        /* Dropdown styles adjusted */
+        .dropdown {
+            margin-top: 20px;
+            text-align: center;
+        }
+        select {
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            background: linear-gradient(to right, #007A33, #E2231A);
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        select:hover {
+            background: #FF8300;
+        }
+
+        /* President's profile section */
+        .president-profile {
+            text-align: center;
+            padding: 30px;
+            background: #000;
+            color: white;
+        }
+        .president-profile img {
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .president-profile h2 {
+            font-size: 28px;
+            margin-top: 15px;
+        }
+        .president-profile p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function navigateToMinistry() {
+            var selectedMinistry = document.getElementById("ministrySelect").value;
+            if (selectedMinistry) {
+                window.location.href = selectedMinistry;
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header>Government of Zambia - Official Website</header>
+
+<div class="dropdown">
+    <select id="ministrySelect" onchange="navigateToMinistry()">
+        <option value="">Select a Ministry</option>
+        <option value="ministry_education.html">Ministry of Education</option>
+        <option value="ministry_health.html">Ministry of Health</option>
+        <option value="ministry_finance.html">Ministry of Finance</option>
+        <option value="ministry_agriculture.html">Ministry of Agriculture</option>
+        <option value="ministry_defense.html">Ministry of Defense</option>
+        <option value="ministry_home_affairs.html">Ministry of Home Affairs</option>
+        <option value="ministry_tourism.html">Ministry of Tourism</option>
+        <option value="ministry_transport.html">Ministry of Transport</option>
+        <option value="ministry_energy.html">Ministry of Energy</option>
+        <option value="ministry_technology.html">Ministry of Technology and Science</option>
+        <option value="ministry_commerce.html">Ministry of Commerce</option>
+        <option value="ministry_community_development.html">Ministry of Community Development</option>
+        <option value="ministry_rural_development.html">Ministry of Rural and Urban Development</option>
+        <option value="ministry_justice.html">Ministry of Justice</option>
+        <option value="ministry_foreign_affairs.html">Ministry of Foreign Affairs</option>
+        <option value="ministry_labor.html">Ministry of Labor</option>
+        <option value="ministry_information.html">Ministry of Information</option>
+        <option value="ministry_local_government.html">Ministry of Local Government</option>
+    </select>
+</div>
+
+<div class="hero">
+    <p>Welcome to the official website of the Government of Zambia.</p>
+</div>
+
+<!-- President's Profile Section -->
+<div class="president-profile">
+    <img src="hh1.jpg" alt="Current President">
+    <h2>President Hakainde Hichilema</h2>
+    <p>Current President of Zambia. Hakainde Hichilema assumed office in 2021. He is focused on economic reforms, transparency, and anti-corruption efforts.</p>
+    
+    <label for="previousPresidents">Select Previous Presidents:</label>
+    <select id="previousPresidents">
+        <option value="president1.html">President Kenneth Kaunda</option>
+        <option value="president2.html">President Frederick Chiluba</option>
+        <option value="president3.html">President Levy Mwanawasa</option>
+        <option value="president4.html">President Rupiah Banda</option>
+        <option value="president5.html">President Michael Sata</option>
+        <option value="president6.html">President Edgar Lungu</option>
+    </select>
+</div>
+
+<div class="container">
+    <h2 style="text-align:center; padding:20px 0;">Government Ministries</h2>
+    <div class="ministries">
+        <div class="ministry">
+            <img src="health.jpg" alt="Ministry of Health">
+            <h3>Ministry of Health</h3>
+        </div>
+        <div class="ministry">
+            <img src="education.jpg" alt="Ministry of Education">
+            <h3>Ministry of Education</h3>
+        </div>
+        <div class="ministry">
+            <img src="agriculture.jpg" alt="Ministry of Agriculture">
+            <h3>Ministry of Agriculture</h3>
+        </div>
+        <div class="ministry">
+            <img src="homeaffairs.jpg" alt="Ministry of Home Affairs">
+            <h3>Ministry of Home Affairs</h3>
+        </div>
+        <div class="ministry">
+            <img src="finance.jpg" alt="Ministry of Finance">
+            <h3>Ministry of Finance</h3>
+        </div>
+        <div class="ministry">
+            <img src="tourism.jpg" alt="Ministry of Tourism">
+            <h3>Ministry of Tourism</h3>
+        </div>
+        <div class="ministry">
+            <img src="commerce.jpg" alt="Ministry of Commerce">
+            <h3>Ministry of Commerce</h3>
+        </div>
+        <div class="ministry">
+            <img src="transport.jpg" alt="Ministry of Transport">
+            <h3>Ministry of Transport</h3>
+        </div>
+        <div class="ministry">
+            <img src="justice.jpg" alt="Ministry of Justice">
+            <h3>Ministry of Justice</h3>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 Government of Zambia. All Rights Reserved.
+</footer>
+
+</body>
+</html>
