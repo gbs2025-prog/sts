@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediConnect - Healthcare App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f9fc; /* Light Blue Background */
+            color: #333;
+        }
+
+        header {
+            background-color: #00aaff; /* Light Blue */
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #00aaff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #0077cc;
+        }
+
+        .main-content {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #00aaff;
+        }
+
+        .feature-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .feature-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card h3 {
+            color: #00aaff;
+        }
+
+        .feature-card p {
+            color: #555;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .button {
+            background-color: #00aaff;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0077cc;
+        }
+
+        footer {
+            background-color: #ffffff;
+            color: #333;
+            text-align: center;
+            padding: 15px;
+            border-top: 1px solid #eeeeee;
+        }
+
+        .news-sticker {
+background-color: #00008B; color: #ffffff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .news-sticker p {
+            display: inline-block;
+            animation: scrolling 10s linear infinite;
+        }
+
+        @keyframes scrolling {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MediConnect</h1>
+    <p>Your digital healthcare solution</p>
+</header>
+
+<nav>
+    <a href="#features">Features</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#download">Download</a>
+</nav>
+
+<div class="main-content">
+    <!-- News Sticker -->
+    <div class="news-sticker">
+        <p>🎉 New Features Coming Soon! Stay tuned for our upcoming mobile app launch! 📱</p>
+    </div>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <h2>Key Features</h2>
+        <div class="feature-list">
+            <!-- Feature 1 -->
+            <div class="feature-card">
+                <h3>Appointment Scheduling</h3>
+                <p>Book appointments with doctors easily and get real-time updates.</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-card">
+                <h3>Teleconsultation</h3>
+                <p>Have virtual consultations with healthcare professionals from anywhere.</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-card">
+                <h3>Electronic Health Records</h3>
+                <p>Securely store and access your medical records anytime, anywhere.</p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature-card">
+                <h3>Payment Integration</h3>
+                <p>Pay for consultations and prescriptions via mobile money or card.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About MediConnect</h2>
+        <p>MediConnect is a mobile app designed to improve healthcare accessibility and communication between doctors and patients. With features like teleconsultation, electronic health records, and seamless payment integration, MediConnect is the future of healthcare management.</p>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="section">
+        <h2>Get Started with MediConnect</h2>
+        <p>Download the MediConnect app and start improving your healthcare experience today!</p>
+        <a href="https://play.google.com/store" class="button" target="_blank">Download on Google Play</a>
+        <a href="https://apps.apple.com/us/app" class="button" target="_blank">Download on the App Store</a>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 MediConnect. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
