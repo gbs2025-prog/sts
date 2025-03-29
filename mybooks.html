@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tendai Sande - Book Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #5a0061; /* Darker Purple with black shade */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header img {
+            width: 150px; /* Increased size of profile picture */
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #ff8000;
+        }
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        .book-card {
+            background: #333;
+            border: 1px solid #444;
+            padding: 20px;
+            margin: 15px;
+            width: 22%;
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .book-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .book-card h3 {
+            color: #6a0dad;
+            margin: 10px 0;
+        }
+        .book-card p {
+            color: #bbb;
+        }
+        .book-card:hover {
+            transform: scale(1.05);
+        }
+        .buy-btn {
+            background-color: #6a0dad;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .buy-btn:hover {
+            background-color: #ff8000;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .book-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        /* Scrolling News Sticker */
+        .news-sticker {
+background-color: #800080; color: #ffffff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            position: relative;
+            top: 20px;
+            margin: 20px 0;
+            font-size: 18px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .news-sticker p {
+            display: inline-block;
+            animation: scrolling 10s linear infinite;
+        }
+        @keyframes scrolling {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="ts.jpeg" alt="Tendai Sande">
+    <h1>Tendai Sande - Official Book Store</h1>
+    <p>Your one-stop shop for books by Tendai Sande</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Books</a>
+    <a href="bio.html">About the Author</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="main-content">
+    <h2>All Available Books</h2>
+    <div class="book-container">
+        <!-- Book 1 -->
+        <div class="book-card">
+            <img src="book1-cover.jpg" alt="Book 1 Cover">
+            <h3>Book 1</h3>
+            <p>Short description of Book 1. This book is a must-read for those who enjoy fiction.</p>
+            <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" class="buy-btn" target="_blank">Submit Proof of Payment</a>
+            <a href="YOUR_PAYPAL_PAYMENT_LINK" class="buy-btn" target="_blank">Pay for Book</a>
+            <a href="path_to_your_pdf/book1.pdf" class="hidden-download" download>Download PDF</a>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="book-card">
+            <img src="book2-cover.jpg" alt="Book 2 Cover">
+            <h3>Book 2</h3>
+            <p>Short description of Book 2. This book covers important aspects of life.</p>
+            <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" class="buy-btn" target="_blank">Submit Proof of Payment</a>
+            <a href="YOUR_PAYPAL_PAYMENT_LINK" class="buy-btn" target="_blank">Pay for Book</a>
+            <a href="path_to_your_pdf/book2.pdf" class="hidden-download" download>Download PDF</a>
+        </div>
+
+        <!-- Book 3 -->
+        <div class="book-card">
+            <img src="book3-cover.jpg" alt="Book 3 Cover">
+            <h3>Book 3</h3>
+            <p>Short description of Book 3. This is a great read for anyone interested in adventure.</p>
+            <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" class="buy-btn" target="_blank">Submit Proof of Payment</a>
+            <a href="YOUR_PAYPAL_PAYMENT_LINK" class="buy-btn" target="_blank">Pay for Book</a>
+            <a href="path_to_your_pdf/book3.pdf" class="hidden-download" download>Download PDF</a>
+        </div>
+
+        <!-- Book 4 -->
+        <div class="book-card">
+            <img src="book4-cover.jpg" alt="Book 4 Cover">
+            <h3>Book 4</h3>
+            <p>Short description of Book 4. A great book for those looking to learn something new.</p>
+            <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK" class="buy-btn" target="_blank">Submit Proof of Payment</a>
+            <a href="YOUR_PAYPAL_PAYMENT_LINK" class="buy-btn" target="_blank">Pay for Book</a>
+            <a href="path_to_your_pdf/book4.pdf" class="hidden-download" download>Download PDF</a>
+        </div>
+    </div>
+</div>
+
+<!-- Scrolling News Sticker -->
+<div class="news-sticker">
+    <p> Welcome to Tendai Sande's Official Bookstore!  New Book Coming Soon! Stay Tuned for Updates! 📚</p>
+</div>
+
+<footer>
+    <p>&copy; 2025 Tendai Sande. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

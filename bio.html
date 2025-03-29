@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tendai Sande - Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: white;
+            color: black;
+        }
+        header {
+            background: skyblue;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            background: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: skyblue;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            border-bottom: 2px solid skyblue;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .profile-picture {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-picture img {
+            width: 220px;
+            height: auto;
+        }
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social-icons a img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s;
+        }
+        .social-icons a img:hover {
+            transform: scale(1.1);
+        }
+        .booking-form {
+            background: #f2f9ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .booking-form input, .booking-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid skyblue;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .booking-form button {
+            padding: 12px;
+            background: skyblue;
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            margin: 20px auto;
+            width: 200px;
+        }
+        .booking-form button:hover {
+            background: #0099ff;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: skyblue;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function sendBookingEmail() {
+            var date = document.getElementById("date").value;
+            var time = document.getElementById("time").value;
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+
+            if (date && time && name && email) {
+                var subject = encodeURIComponent("Booking Request from " + name);
+                var body = encodeURIComponent("Hello Tendai,\n\nI would like to book an appointment on " + date + " at " + time + ".\n\nName: " + name + "\nEmail: " + email + "\n\nThank you!");
+                var mailtoLink = "https://mail.google.com/mail/?view=cm&fs=1&to=tendaisande729@gmail.com&su=" + subject + "&body=" + body;
+                
+                window.open(mailtoLink, "_blank");
+            } else {
+                alert("Please fill in all the details before booking.");
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <header>Tendai Sande</header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#booking">Book Me</a>
+<a href="stshomepage.html">My Products and Services</a>
+<a href="mybooks.html">Purchase Written Books</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <div class="profile-picture">
+                <img src="tendai.jpeg" alt="Tendai Sande">
+            </div>
+            
+<section>
+    <h2>About Me</h2>
+    <p>
+        Hello, I am <span class="highlight">Tendai Sande</span>, born on <strong>June 4, 2002</strong>. I am a passionate professional with expertise across multiple fields, including <strong>health, computer science, green energy, and leadership</strong>. My journey has been marked by my continuous drive for learning and making impactful contributions in the sectors I work in.
+    </p>
+</section>
+
+<section>
+    <h2>Certifications & Achievements</h2>
+    <p>
+        Over the years, I have obtained certifications from prestigious organizations, empowering me to work at the intersection of technology, social impact, and sustainability. Some of the key certifications include:
+    </p>
+    <div class="certifications">
+        <ul>
+            <li><strong>YALI (Young African Leaders Initiative)</strong></li>
+            <li><strong>International Youth Conference Centre</strong></li>
+            <li><strong>Health and Wellness Certifications</strong></li>
+            <li><strong>Green Energy and Sustainable Development Training</strong></li>
+            <li><strong>Leadership Development Programs</strong></li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Professional Experience & Projects</h2>
+    <p>
+        My experience spans across several projects and initiatives that combine my technical and leadership skills. I have been involved in the development of <strong>web and mobile applications</strong>, designed and managed <strong>business management systems</strong>, and contributed to various <strong>sustainable energy projects</strong> aimed at creating scalable, eco-friendly solutions.
+    </p>
+    <p>
+        Additionally, I am a licensed <strong>psychosocial counselor</strong>, emphasizing the importance of mental well-being in both personal and professional development. I believe in the power of <strong>innovation</strong> and <strong>collaboration</strong> to create efficient solutions for the challenges we face.
+    </p>
+</section>
+
+
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills & Experience</h2>
+            <ul>
+                <li>✔ Web Development (HTML, CSS, JavaScript)</li>
+                <li>✔ Microsoft Office Suite (Word, Excel, PowerPoint)</li>
+                <li>✔ Mobile & Web Application Development</li>
+                <li>✔ Graphic Design & UI/UX</li>
+                <li>✔ Business Systems Development</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>My Projects</h2>
+            <ul>
+                <li>📌 Pharmacy Management System</li>
+                <li>📌 Hospital Management System</li>
+                <li>📌 Payroll Management System</li>
+                <li>📌 Graphic Design & Branding Solutions</li>
+                <li>📌 Web & Mobile App Development</li>
+            </ul>
+        </section>
+
+        <section id="booking" class="section booking-form">
+            <h2>Book Me</h2>
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Select Time:</label>
+            <select id="time" required>
+                <option value="09:00 AM">09:00 AM</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="02:00 PM">02:00 PM</option>
+                <option value="03:00 PM">03:00 PM</option>
+            </select>
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" required>
+
+            <button onclick="sendBookingEmail()">Book Now</button>
+        </section>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/yourprofile" target="_blank"><img src="facebook.jpg" alt="Facebook"></a>
+            <a href="https://www.twitter.com/yourprofile" target="_blank"><img src="twitter.jpg" alt="Twitter"></a>
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><img src="linkedln.jpg" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank"><img src="instagram.jpg" alt="Instagram"></a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Tendai Sande. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
