@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Stream</title>
+    <style>
+        /* Base Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            background-color: #3e1f64;
+            padding: 20px;
+            position: relative;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Artist Pages */
+        .artist-page {
+            padding: 20px;
+        }
+
+        .artist-item {
+            background-color: #6a3e99;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.3s;
+        }
+
+        .artist-item:hover {
+            transform: scale(1.05);
+        }
+
+        .artist-item img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .artist-item img:hover {
+            transform: scale(1.1);
+        }
+
+        .artist-info {
+            flex-grow: 1;
+            padding: 0 20px;
+            text-align: left;
+        }
+
+        .artist-item a {
+            text-decoration: none;
+        }
+
+        .artist-item button {
+            background-color: #ff9900;
+            color: black;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .artist-item button:hover {
+            background-color: #e08900;
+        }
+
+        footer {
+            background-color: #3e1f64;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>sandetendaimusic.com</h1>
+        <nav>
+            <ul>
+                <li><a href="drake.html">Drake</a></li>
+                <li><a href="adele.html">Adele</a></li>
+                <li><a href="bts.html">BTS</a></li>
+<li><a href="2pac.html">2pac</a></li>
+<li><a href="kendrick lamar.html">kendrick Lamar</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="artist-page">
+        <h2>Choose an artist to explore their music:</h2>
+        <div class="artist-item">
+            <a href="drake.html">
+                <img src="drake.jpg" alt="Drake">
+            </a>
+            <div class="artist-info">
+                <h3>Drake</h3>
+                <p>Explore and download his latest songs.</p>
+            </div>
+            <a href="drake.html"><button>Go to Page</button></a>
+        </div>
+        <div class="artist-item">
+            <a href="adele.html">
+                <img src="adele.jpg" alt="Adele">
+            </a>
+            <div class="artist-info">
+                <h3>Adele</h3>
+                <p>Discover her soulful music.</p>
+            </div>
+            <a href="adele.html"><button>Go to Page</button></a>
+        </div>
+        <div class="artist-item">
+            <a href="bts.html">
+                <img src="bts.jpg" alt="BTS">
+            </a>
+            <div class="artist-info">
+                <h3>BTS</h3>
+                <p>Listen to the biggest hits from BTS.</p>
+            </div>
+            <a href="bts.html"><button>Go to Page</button></a>
+        </div>
+<div class="artist-item">
+            <a href="kendrick Lamar.html">
+                <img src="kendrick.jpg" alt="kendrick Lamar">
+            </a>
+            <div class="artist-info">
+                <h3>Kendrick Lamar</h3>
+                <p>The best of Kendrick Lamar.</p>
+            </div>
+            <a href="kendricklamar.html"><button>Go to Page</button></a>
+        </div>
+<div class="artist-item">
+            <a href="2pac.html">
+                <img src="2pac.jpg" alt="2pac">
+            </a>
+            <div class="artist-info">
+                <h3>2pac</h3>
+                <p>Explore and stream the life long hip-hop legend.</p>
+            </div>
+            <a href="2pac.html"><button>Go to Page</button></a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Music Stream. All rights reserved.</p>
+    </footer>
+        <a href="stsmusic.html">Back to Home</a>
+  
+</body>
+</html>
