@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Stream</title>
+    <style>
+        /* Base Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            background-color: #3e1f64;
+            padding: 20px;
+            position: relative;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* News Ticker */
+        #news-ticker {
+background-color: #800080; color: #ffffff;
+            color: black;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            animation: ticker 15s linear infinite;
+        }
+
+        /* Ticker Animation */
+        @keyframes ticker {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Search Bar */
+        #search-bar {
+            padding: 10px;
+            width: 50%;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            margin: 20px 0;
+        }
+
+        /* Songs Section */
+        #songs-container, #artists-container {
+            padding: 20px;
+        }
+
+        .song-item, .artist-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #6a3e99;
+            padding: 10px;
+            margin: 10px auto;
+            width: 80%;
+            border-radius: 8px;
+        }
+
+        .song-item button, .artist-item button {
+            background-color: #ff9900;
+            color: black;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .song-item button:hover, .artist-item button:hover {
+            background-color: #e08900;
+        }
+
+        /* Visitor Counter */
+        #stats {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #3e1f64;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .artist-item img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .artist-item img:hover {
+            transform: scale(1.1);
+        }
+
+        .artist-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .artist-item {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+    <img src="stsmusic.jpg" alt="Music Stream Logo" width="300">
+    <h1>Music Stream</h1>
+</header>
+
+        <h1>THE BEST MUSIC SITE FOR STREAMING AND DOWNLOADING YOUR FAVOURITES ARTIST'S MUSIC</h1>
+<br>developed by tendai sande<br/>
+<br>(Hip-Hop) (Amapiano) (Raggae) (Gospel) (Country) (Jazz) (Classics) (90s Rnb x Hip-Hop) (Afro Pop x Beats) (Gospel Rap) (Rhumba) <br/>
+        <nav>
+            <ul>
+                <li><a href="#songs-container">Songs</a></li>
+                <li><a href="#artists-container">Artists</a></li>
+                <li><a href="#trending">Trending</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Visitor and Download Counter -->
+    <div id="stats">Visitors: <span id="visitor-count">0</span> | Total Downloads: <span id="download-count">0</span> | Plays: <span id="play-count">0</span></div>
+
+    <!-- Search Bar -->
+    <input type="text" id="search-bar" placeholder="Search for artists or songs..." oninput="searchMusic(this.value)">
+
+    <!-- Songs Section -->
+    <section id="songs-container">
+        <h2>Available Songs</h2>
+        <div id="songs-list"></div>
+    </section>
+
+   <!-- Artists Section -->
+    <section id="artists-container">
+        <h2>Featured Artists</h2>
+        <div class="artist-list">
+            <!-- Artist 1 -->
+            <div class="artist-item">
+                <a href="drake.html"><img src="drake.jpg" alt="Drake"></a>
+                <p>Drake</p>
+            </div>
+            <!-- Artist 2 -->
+            <div class="artist-item">
+                <a href="adele.html"><img src="adele.jpg" alt="Adele"></a>
+                <p>Adele</p>
+            </div>
+            <!-- Artist 3 -->
+            <div class="artist-item">
+                <a href="bts.html"><img src="bts.jpg" alt="BTS"></a>
+                <p>BTS</p>
+            </div>
+            <!-- Add more artists here -->
+            <div class="artist-item">
+                <a href="2pac.html"><img src="2pac.jpg" alt="2pac"></a>
+                <p>2pac</p>
+            </div>
+            <div class="artist-item">
+                <a href="Kendrick Lamar.html"><img src="kendrick.jpg" alt="Kendrick Lamar"></a>
+                <p>Kendrick Lamar</p>
+            </div>
+            <div class="artist-item">
+                <a href="a-reece.html"><img src="a-reece.jpg" alt="A-Reece"></a>
+                <p>A-Reece</p>
+            </div>
+            <div class="artist-item">
+                <a href="Amapiano.html"><img src="Amapiano.jpg" alt="Amapiano"></a>
+                <p>Amapiano</p>
+            </div>
+            <div class="artist-item">
+                <a href="Abba.html"><img src="Abba.jpg" alt="Abba"></a>
+                <p>Abba</p>
+            </div>
+            <div class="artist-item">
+                <a href="Alan Jackson.html"><img src="Alan Jackson.jpg" alt="Alan Jackson"></a>
+                <p>Alan Jackson</p>
+            </div>
+            <div class="artist-item">
+                <a href="Bob Marley.html"><img src="Bob Marley.jpg" alt="Bob Marley"></a>
+                <p>Bob Marley</p>
+            </div>
+            <div class="artist-item">
+                <a href="MJ.html"><img src="MJ.jpg" alt="Michael Jackson"></a>
+                <p>Michael Jackson</p>
+            </div>
+            <div class="artist-item">
+                <a href="90s.html"><img src="90s.jpeg" alt="90s"></a>
+                <p>90s</p>
+            </div>
+            <div class="artist-item">
+                <a href="Tyla.html"><img src="Tyla.jpg" alt="Tyla"></a>
+                <p>Tyla</p>
+            </div>
+            <div class="artist-item">
+                <a href="Eminem.html"><img src="Eminem.jpg" alt="Eminem"></a>
+                <p>Eminem</p>
+            </div>
+            <div class="artist-item">
+                <a href="burna boy.html"><img src="burna boy.jpg" alt="burna boy"></a>
+                <p>burna boy</p>
+            </div>
+            <div class="artist-item">
+                <a href="Stormzy.html"><img src="Stormzy.jpg" alt="Stormzy"></a>
+                <p>Stormzy</p>
+            </div>
+            <li><a href="stsalbums.html">Downloads Albums from here</a></li>
+        </div>
+    </section>
+
+    <!-- News Ticker below the website -->
+    <div id="news-ticker"> Welcome to sandetendaimusic.com, to advertise with us,email us at tendaisande729@gmail.com, Get your music featured on the best music platform ever</div>
+
+    <footer>
+        <p>&copy; 2025 Music Stream. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let visitorCount = localStorage.getItem("visitorCount") || 0;
+        let downloadCount = localStorage.getItem("downloadCount") || 0;
+        let playCount = localStorage.getItem("playCount") || 0;
+
+        document.getElementById("visitor-count").textContent = ++visitorCount;
+        localStorage.setItem("visitorCount", visitorCount);
+        document.getElementById("download-count").textContent = downloadCount;
+        document.getElementById("play-count").textContent = playCount;
+
+        const musicAPI = [
+            { artist: "Drake", song: "God's Plan", url: "downloads/drake_gods_plan.mp3" },
+            { artist: "Adele", song: "Hello", url: "downloads/adele_hello.mp3" },
+   { artist: "2pac", song: "Dear Mama", url: "downloads/2Pac - Dear Mama.mp3" },
+{ artist: "Kendrick Lamar", song: "The Heart Part - 5", url: "downloads/Kendrick Lamar - The Heart Part 5.mp3" },
+{ artist: "A-Reece", song: "Godlike", url: "downloads/A-Reece - Godlike.mp3" },
+            { artist: "BTS", song: "Dynamite", url: "downloads/bts_dynamite.mp3" }
+        ];
+
+        let currentPlayingAudio = null;
+
+        function loadSongs(songs = musicAPI) {
+            const container = document.getElementById("songs-list");
+            container.innerHTML = "";
+
+            songs.forEach((track, index) => {
+                const songElement = document.createElement("div");
+                songElement.classList.add("song-item");
+                songElement.innerHTML = `
+                    <p>${track.artist} - ${track.song}</p>
+                    <audio id="audio-${index}" src="${track.url}"></audio>
+                    <button id="play-btn-${index}" onclick="togglePlay(${index})">Play</button>
+                    <a href="${track.url}" download onclick="incrementDownloads()">
+                        <button>Download</button>
+                    </a>
+                `;
+                container.appendChild(songElement);
+            });
+        }
+
+        function searchMusic(query) {
+            const filteredSongs = musicAPI.filter(
+                track => track.song.toLowerCase().includes(query.toLowerCase()) || 
+                         track.artist.toLowerCase().includes(query.toLowerCase())
+            );
+            loadSongs(filteredSongs);
+        }
+
+        function togglePlay(index) {
+            const audioElement = document.getElementById(`audio-${index}`);
+            const playButton = document.getElementById(`play-btn-${index}`);
+
+            if (currentPlayingAudio && currentPlayingAudio !== audioElement) {
+                currentPlayingAudio.pause();
+                document.querySelectorAll("button[id^='play-btn-']").forEach(btn => btn.textContent = "Play");
+            }
+
+            if (audioElement.paused) {
+                audioElement.play();
+                playButton.textContent = "Pause";
+                currentPlayingAudio = audioElement;
+                playCount++;
+                localStorage.setItem("playCount", playCount);
+                document.getElementById("play-count").textContent = playCount;
+            } else {
+                audioElement.pause();
+                playButton.textContent = "Play";
+                currentPlayingAudio = null;
+            }
+        }
+
+        function incrementDownloads() {
+            document.getElementById("download-count").textContent = ++downloadCount;
+            localStorage.setItem("downloadCount", downloadCount);
+        }
+
+        window.onload = loadSongs;
+    </script>
+</body>
+</html>
