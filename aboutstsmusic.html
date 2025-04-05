@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Top Navigation Dropdowns</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #0e0e0e;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+
+    .dropdown-row {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+      background-color: #121212;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+    }
+
+    label {
+      font-size: 0.9rem;
+      color: #b88eff;
+      text-transform: uppercase;
+      margin-right: 8px;
+    }
+
+    .dropdown-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    select {
+      background-color: #1a1a1a;
+      color: #b88eff;
+      border: 2px solid #b88eff;
+      padding: 8px 12px;
+      font-size: 0.95rem;
+      border-radius: 10px;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+    }
+
+    select:hover {
+      background-color: #2b2b2b;
+    }
+
+    option {
+      background-color: #1a1a1a;
+      color: #b88eff;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .content {
+      padding-top: 130px;
+      text-align: center;
+    }
+
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      padding: 50px 20px;
+    }
+
+    .about-content {
+      max-width: 500px;
+    }
+
+    .about-content h1 {
+      color: #b88eff;
+      margin-bottom: 20px;
+    }
+
+    .about-content p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .about-image img {
+      width: 300px;
+      height: auto;
+      border: 5px solid #b88eff;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #b88eff;
+    }
+
+    .news-ticker {
+      background-color: #b88eff;
+      color: #0e0e0e;
+      font-weight: bold;
+      padding: 10px 0;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 100;
+      font-size: 1rem;
+      animation: tickerScroll 20s linear infinite;
+    }
+
+    @keyframes tickerScroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .ticker-content {
+      display: inline-block;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- DROPDOWN MENU -->
+  <div class="dropdown-row">
+    <div class="dropdown-container">
+      <label for="music">Music</label>
+      <select id="music" onchange="navigateToPage(this)">
+        <option value="">-- Select --</option>
+        <option value="stsmusic.html">Music Homepage</option>
+      </select>
+    </div>
+
+    <div class="dropdown-container">
+      <label for="albums">Albums</label>
+      <select id="albums" onchange="navigateToPage(this)">
+        <option value="">-- Select --</option>
+        <option value="stsalbums.html">All Albums</option>
+      </select>
+    </div>
+
+    <div class="dropdown-container">
+      <label for="support">Support</label>
+      <select id="support" onchange="navigateToPage(this)">
+        <option value="">-- Select --</option>
+        <option value="stssupport.html">Support by Donating</option>
+      </select>
+    </div>
+
+    <div class="dropdown-container">
+      <label for="more">More</label>
+      <select id="more" onchange="navigateToPage(this)">
+        <option value="">-- Select --</option>
+        <option value="https://example.com/about">About Us</option>
+        <option value="https://example.com/blog">Blog</option>
+        <option value="https://example.com/privacy">Privacy Policy</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="content">
+    <h1>Welcome to the Music Platform</h1>
+    <p>Use the dropdowns above to explore various sections of the site.</p>
+  </div>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section">
+    <div class="about-content">
+      <h1>About Us</h1>
+      <p>
+        Welcome to our music hub – where rhythm meets innovation. We bring you the freshest sounds from across the globe, empowering all artists and music lovers alike. Whether you're vibing to African beats, Asian melodies, or American hits, you're in the right place, special thanks goes to our developer and founder Tendai Sande.
+      </p>
+      <p>
+        Our mission is to make music accessible, enjoyable, and inspiring. Download, stream, and explore – no sign-up required. Just pure music.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="stsmusic.jpg" alt="About Image">
+    </div>
+  </section>
+
+  <!-- NEWS TICKER -->
+  <div class="news-ticker">
+    <div class="ticker-content">
+      Enquire | Support | Share | Use and Explore the Music Platform Today! 💜
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+    function navigateToPage(selectElement) {
+      const url = selectElement.value;
+      if (url) {
+        window.location.href = url;
+      }
+    }
+  </script>
+
+</body>
+</html>
